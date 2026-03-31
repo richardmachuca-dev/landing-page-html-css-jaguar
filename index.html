@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Club Deportivo Jaguar | Basketball</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        🐆 <span>Club Deportivo Jaguar</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mapa">Cancha</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="inicio" class="hero d-flex align-items-center">
+    <div class="container text-center text-white">
+      <p class="hero-subtitle">Temporada 2026</p>
+      <h1 class="hero-title">CLUB DEPORTIVO<br>JAGUAR</h1>
+      <p class="hero-desc">Formando campeones desde la infancia hasta la élite. Cuatro categorías, un solo corazón.</p>
+      <a href="#categorias" class="btn btn-hero mt-3">Ver categorías</a>
+    </div>
+  </section>
+
+  <!-- ========== ESTADÍSTICAS ========== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-6 col-md-3 stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Categorías</span>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <span class="stat-num">60+</span>
+          <span class="stat-label">Deportistas</span>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <span class="stat-num">8</span>
+          <span class="stat-label">Entrenadores</span>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <span class="stat-num">12</span>
+          <span class="stat-label">Años de historia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NOSOTROS ========== -->
+  <section id="nosotros" class="section-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-tag">Nuestra historia</span>
+          <h2 class="section-title">¿Quiénes somos?</h2>
+          <p class="section-text">
+            El Club Deportivo Jaguar nació en 2014 con la misión de desarrollar el basketball en todas
+            sus etapas: desde niños que dan sus primeros pasos en la cancha hasta equipos adultos que
+            compiten en ligas regionales.
+          </p>
+          <p class="section-text">
+            Contamos con cuatro categorías activas, cuerpo técnico especializado por edad y una cancha
+            equipada para entrenar durante todo el año.
+          </p>
+          <a href="#categorias" class="btn btn-primary-custom mt-2">Ver categorías</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="court-card">
+            <div class="court-icon">🏟️</div>
+            <h4>Sede Principal</h4>
+            <p>Cancha Isabel Riquelme</p>
+            <hr />
+            <p><strong>📞 Teléfono general:</strong></p>
+            <p>+56 9 8800 1234</p>
+            <hr />
+            <p><strong>✉️ Correo:</strong></p>
+            <p>chardma@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORÍAS ========== -->
+  <section id="categorias" class="section-dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Nuestros equipos</span>
+        <h2 class="section-title light">Categorías del Club</h2>
+        <p class="section-text light-text mx-auto" style="max-width:580px;">
+          Cada categoría tiene su propio entrenador, horario de práctica y calendario de partidos.
+        </p>
+      </div>
+
+      <!-- SUB 11-13 -->
+      <div class="categoria-block">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <div class="cat-header">
+              <span class="cat-emoji">🧒</span>
+              <div>
+                <span class="cat-tag-badge">Formación</span>
+                <h3 class="cat-title">Sub 11 – 13</h3>
+                <p class="cat-desc">Categoría infantil donde se aprenden los fundamentos del basketball con énfasis en el disfrute y el trabajo en equipo.</p>
+              </div>
+            </div>
+            <div class="cat-contact">
+              <p>👨‍🏫 <strong>Entrenador:</strong> Pablo Soto</p>
+              <p>📞 <strong>Contacto:</strong> +56 9 7711 2233</p>
+              <p>✉️ <strong>Email:</strong> sub13@clubjaguar.cl</p>
+            </div>
+            <div class="schedule-box">
+              <p class="schedule-title">⏰ Horarios de entrenamiento</p>
+              <table class="schedule-table">
+                <tr><td>Martes</td><td>16:00 – 17:30 hrs</td></tr>
+                <tr><td>Jueves</td><td>16:00 – 17:30 hrs</td></tr>
+                <tr><td>Sábado</td><td>09:00 – 10:30 hrs</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="results-label">📊 Últimos resultados</p>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="result-card win">
+                  <span class="result-date">15 MAR 2026</span>
+                  <div class="result-teams">Jaguar Sub13 <span>vs</span> Leones</div>
+                  <div class="result-score">48 – 35</div>
+                  <span class="result-badge victoria">Victoria</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="result-card loss">
+                  <span class="result-date">08 MAR 2026</span>
+                  <div class="result-teams">Osos <span>vs</span> Jaguar Sub13</div>
+                  <div class="result-score">52 – 41</div>
+                  <span class="result-badge derrota">Derrota</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="result-card win">
+                  <span class="result-date">01 MAR 2026</span>
+                  <div class="result-teams">Jaguar Sub13 <span>vs</span> Cóndores</div>
+                  <div class="result-score">61 – 44</div>
+                  <span class="result-badge victoria">Victoria</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat-divider"></div>
+
+      <!-- SUB 15-17 -->
+      <div class="categoria-block">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <div class="cat-header">
+              <span class="cat-emoji">🧑</span>
+              <div>
+                <span class="cat-tag-badge">Juvenil</span>
+                <h3 class="cat-title">Sub 15 – 17</h3>
+                <p class="cat-desc">Categoría juvenil orientada al desarrollo táctico y físico. Participan en la Liga Juvenil Regional.</p>
+              </div>
+            </div>
+            <div class="cat-contact">
+              <p>👨‍🏫 <strong>Entrenador:</strong> Rodrigo Vargas</p>
+              <p>📞 <strong>Contacto:</strong> +56 9 8822 3344</p>
+              <p>✉️ <strong>Email:</strong> sub17@clubjaguar.cl</p>
+            </div>
+            <div class="schedule-box">
+              <p class="schedule-title">⏰ Horarios de entrenamiento</p>
+              <table class="schedule-table">
+                <tr><td>Lunes</td><td>17:00 – 19:00 hrs</td></tr>
+                <tr><td>Miércoles</td><td>17:00 – 19:00 hrs</td></tr>
+                <tr><td>Viernes</td><td>17:00 – 19:00 hrs</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="results-label">📊 Últimos resultados</p>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="result-card win">
+                  <span class="result-date">16 MAR 2026</span>
+                  <div class="result-teams">Jaguar Sub17 <span>vs</span> Halcones</div>
+                  <div class="result-score">74 – 60</div>
+                  <span class="result-badge victoria">Victoria</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="result-card win">
+                  <span class="result-date">09 MAR 2026</span>
+                  <div class="result-teams">Tigres <span>vs</span> Jaguar Sub17</div>
+                  <div class="result-score">55 – 67</div>
+                  <span class="result-badge victoria">Victoria</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="result-card draw">
+                  <span class="result-date">02 MAR 2026</span>
+                  <div class="result-teams">Jaguar Sub17 <span>vs</span> Panteras</div>
+                  <div class="result-score">58 – 58</div>
+                  <span class="result-badge empate">Empate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat-divider"></div>
+
+      <!-- ADULTA MASCULINO -->
+      <div class="categoria-block">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <div class="cat-header">
+              <span class="cat-emoji">👨</span>
+              <div>
+                <span class="cat-tag-badge">Adulto</span>
+                <h3 class="cat-title">Adulta Masculino</h3>
+                <p class="cat-desc">Equipo adulto masculino que compite en la Liga Abierta Regional. Alta exigencia técnica y física.</p>
+              </div>
+            </div>
+            <div class="cat-contact">
+              <p>👨‍🏫 <strong>Entrenador:</strong> Fernando Ríos</p>
+              <p>📞 <strong>Contacto:</strong> +56 9 9933 4455</p>
+              <p>✉️ <strong>Email:</strong> masculino@clubjaguar.cl</p>
+            </div>
+            <div class="schedule-box">
+              <p class="schedule-title">⏰ Horarios de entrenamiento</p>
+              <table class="schedule-table">
+                <tr><td>Martes</td><td>20:00 – 22:00 hrs</td></tr>
+                <tr><td>Jueves</td><td>20:00 – 22:00 hrs</td></tr>
+                <tr><td>Sábado</td><td>11:00 – 13:00 hrs</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="results-label">📊 Últimos resultados</p>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="result-card loss">
+                  <span class="result-date">14 MAR 2026</span>
+                  <div class="result-teams">Dragones <span>vs</span> Jaguar Masc.</div>
+                  <div class="result-score">88 – 79</div>
+                  <span class="result-badge derrota">Derrota</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="result-card win">
+                  <span class="result-date">07 MAR 2026</span>
+                  <div class="result-teams">Jaguar Masc. <span>vs</span> Lobos</div>
+                  <div class="result-score">92 – 80</div>
+                  <span class="result-badge victoria">Victoria</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="result-card win">
+                  <span class="result-date">28 FEB 2026</span>
+                  <div class="result-teams">Cóndores <span>vs</span> Jaguar Masc.</div>
+                  <div class="result-score">71 – 85</div>
+                  <span class="result-badge victoria">Victoria</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat-divider"></div>
+
+      <!-- ADULTA FEMENINO -->
+      <div class="categoria-block">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <div class="cat-header">
+              <span class="cat-emoji">👩</span>
+              <div>
+                <span class="cat-tag-badge">Adulto</span>
+                <h3 class="cat-title">Adulta Femenino</h3>
+                <p class="cat-desc">Equipo adulto femenino con presencia en la Liga Femenina Regional. Un referente del basketball femenino local.</p>
+              </div>
+            </div>
+            <div class="cat-contact">
+              <p>👩‍🏫 <strong>Entrenadora:</strong> Valentina Cruz</p>
+              <p>📞 <strong>Contacto:</strong> +56 9 7744 5566</p>
+              <p>✉️ <strong>Email:</strong> femenino@clubjaguar.cl</p>
+            </div>
+            <div class="schedule-box">
+              <p class="schedule-title">⏰ Horarios de entrenamiento</p>
+              <table class="schedule-table">
+                <tr><td>Lunes</td><td>19:00 – 21:00 hrs</td></tr>
+                <tr><td>Miércoles</td><td>19:00 – 21:00 hrs</td></tr>
+                <tr><td>Domingo</td><td>10:00 – 12:00 hrs</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="results-label">📊 Últimos resultados</p>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="result-card win">
+                  <span class="result-date">15 MAR 2026</span>
+                  <div class="result-teams">Jaguar Fem. <span>vs</span> Amazonas</div>
+                  <div class="result-score">65 – 52</div>
+                  <span class="result-badge victoria">Victoria</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="result-card win">
+                  <span class="result-date">08 MAR 2026</span>
+                  <div class="result-teams">Zorras <span>vs</span> Jaguar Fem.</div>
+                  <div class="result-score">48 – 61</div>
+                  <span class="result-badge victoria">Victoria</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="result-card loss">
+                  <span class="result-date">01 MAR 2026</span>
+                  <div class="result-teams">Jaguar Fem. <span>vs</span> Panteras</div>
+                  <div class="result-score">54 – 69</div>
+                  <span class="result-badge derrota">Derrota</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== MAPA ========== -->
+  <section id="mapa" class="section-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="section-tag">Dónde entrenar</span>
+        <h2 class="section-title">Nuestra Cancha</h2>
+        <p class="section-text mx-auto" style="max-width:560px;">
+          Entrenamos en la <strong>Cancha Isabel Riquelme</strong>. Encuéntranos fácilmente en el mapa.
+        </p>
+      </div>
+      <div class="mapa-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3!2d-70.7438434!3d-33.483515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c33f8d13c70b%3A0x62d043b9d3dbda4e!2sCancha%20Isabel%20Riquelme!5e0!3m2!1ses!2scl!4v1710000000000"
+          width="100%" height="420" style="border:0;"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="text-center mt-4">
+        <a href="https://maps.app.goo.gl/EEhy8F28Gdxb6Bm26" target="_blank" class="btn btn-primary-custom">
+          📍 Abrir en Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto" class="section-dark">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center">
+          <span class="section-tag">Únete al Jaguar</span>
+          <h2 class="section-title light">¿Quieres ser parte del club?</h2>
+          <p class="section-text light-text">
+            Escríbenos indicando tu edad e interés y un entrenador se contactará contigo en menos de 48 horas.
+          </p>
+
+          <div id="alerta-ok" class="alerta-form alerta-ok" style="display:none;">
+            ✅ ¡Mensaje enviado! Te contactaremos pronto.
+          </div>
+          <div id="alerta-error" class="alerta-form alerta-error" style="display:none;">
+            ❌ Hubo un error al enviar. Intenta nuevamente.
+          </div>
+
+          <form id="formulario-contacto" class="contact-form mt-4" novalidate>
+            <div class="mb-3">
+              <input type="text" id="campo-nombre" class="form-control custom-input" placeholder="Tu nombre completo" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" id="campo-correo" class="form-control custom-input" placeholder="Tu correo electrónico" required />
+            </div>
+            <div class="mb-3">
+              <select id="campo-categoria" class="form-select custom-input" required>
+                <option value="" disabled selected>Selecciona una categoría</option>
+                <option>Sub 11 – 13</option>
+                <option>Sub 15 – 17</option>
+                <option>Adulta Masculino</option>
+                <option>Adulta Femenino</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea id="campo-mensaje" class="form-control custom-input" rows="4" placeholder="Tu mensaje..." required></textarea>
+            </div>
+            <button type="submit" id="btn-enviar" class="btn btn-hero w-100">
+              Enviar mensaje 🐆
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="footer-brand">🐆 Club Deportivo Jaguar</p>
+      <p class="footer-links">
+        <a href="#inicio">Inicio</a> ·
+        <a href="#nosotros">Nosotros</a> ·
+        <a href="#categorias">Categorías</a> ·
+        <a href="#mapa">Cancha</a> ·
+        <a href="#contacto">Contacto</a>
+      </p>
+      <p class="footer-copy">© 2026 Club Deportivo Jaguar. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== BOTÓN FLOTANTE WHATSAPP ========== -->
+  <a href="https://chat.whatsapp.com/REEMPLAZA_CON_TU_LINK" target="_blank" class="whatsapp-float" title="Únete a nuestro grupo de WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="30" height="30">
+      <path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.472 2.027 7.773L0 32l8.468-2.004A15.93 15.93 0 0 0 16 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.771-1.854l-.485-.289-5.025 1.188 1.22-4.892-.317-.502A13.238 13.238 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.878c-.398-.199-2.354-1.162-2.72-1.295-.365-.133-.631-.199-.897.2-.265.398-1.029 1.295-1.261 1.561-.232.265-.465.299-.863.1-.398-.2-1.682-.62-3.204-1.977-1.184-1.057-1.983-2.362-2.215-2.761-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.698.2-.232.266-.398.398-.664.133-.265.067-.498-.033-.697-.1-.2-.897-2.162-1.229-2.96-.324-.778-.652-.672-.897-.685l-.764-.013c-.265 0-.697.1-1.062.498-.365.399-1.394 1.362-1.394 3.322 0 1.96 1.428 3.854 1.627 4.12.2.265 2.81 4.29 6.808 6.016.951.41 1.693.655 2.272.838.955.303 1.824.26 2.511.158.766-.114 2.354-.962 2.686-1.891.332-.929.332-1.727.232-1.892-.099-.164-.365-.265-.763-.464z"/>
+    </svg>
+    <span>¡Únete al grupo!</span>
+  </a>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    const EMAILJS_PUBLIC_KEY  = "TU_PUBLIC_KEY";
+    const EMAILJS_SERVICE_ID  = "TU_SERVICE_ID";
+    const EMAILJS_TEMPLATE_ID = "TU_TEMPLATE_ID";
+
+    // ✅ URL de Google Apps Script actualizada
+    const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwAb85rhWwU7MNJ5unc4Z-NH2c1fuleWiFhkvOp4eeOWloxQMkZeJdrNzvP-7oknKca/exec";
+
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
+    document.getElementById("formulario-contacto").addEventListener("submit", async function(e) {
+      e.preventDefault();
+
+      const nombre    = document.getElementById("campo-nombre").value.trim();
+      const correo    = document.getElementById("campo-correo").value.trim();
+      const categoria = document.getElementById("campo-categoria").value;
+      const mensaje   = document.getElementById("campo-mensaje").value.trim();
+      const fecha     = new Date().toLocaleString("es-CL");
+
+      if (!nombre || !correo || !categoria || !mensaje) {
+        mostrarAlerta("error", "❌ Por favor completa todos los campos.");
+        return;
+      }
+
+      const btn = document.getElementById("btn-enviar");
+      btn.disabled = true;
+      btn.textContent = "Enviando...";
+
+      try {
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+          nombre, correo, categoria, mensaje, fecha
+        });
+
+        await fetch(GOOGLE_SHEET_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ nombre, correo, categoria, mensaje, fecha })
+        });
+
+        mostrarAlerta("ok", "✅ ¡Mensaje enviado! Te contactaremos pronto.");
+        document.getElementById("formulario-contacto").reset();
+
+      } catch (error) {
+        console.error("Error al enviar:", error);
+        mostrarAlerta("error", "❌ Hubo un error. Verifica tu conexión e intenta nuevamente.");
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "Enviar mensaje 🐆";
+      }
+    });
+
+    function mostrarAlerta(tipo, texto) {
+      const ok  = document.getElementById("alerta-ok");
+      const err = document.getElementById("alerta-error");
+      ok.style.display  = "none";
+      err.style.display = "none";
+
+      if (tipo === "ok") {
+        ok.textContent = texto;
+        ok.style.display = "block";
+        setTimeout(() => ok.style.display = "none", 5000);
+      } else {
+        err.textContent = texto;
+        err.style.display = "block";
+        setTimeout(() => err.style.display = "none", 6000);
+      }
+    }
+  </script>
+
+</body>
+</html>

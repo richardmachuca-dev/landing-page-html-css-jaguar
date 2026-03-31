@@ -1,0 +1,447 @@
+/* =============================================
+   CLUB DEPORTIVO JAGUAR — styles.css
+   ============================================= */
+
+/* --- Variables --- */
+:root {
+  --naranja:    #F97316;
+  --naranja-d:  #C2410C;
+  --negro:      #0D0D0D;
+  --gris-osc:   #1A1A1A;
+  --gris-med:   #2A2A2A;
+  --gris-cla:   #F5F5F5;
+  --blanco:     #FFFFFF;
+  --texto:      #333333;
+  --verde:      #22C55E;
+  --rojo:       #EF4444;
+  --amarillo:   #EAB308;
+  --fuente-disp: 'Bebas Neue', sans-serif;
+  --fuente-body: 'Barlow', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--fuente-body); color: var(--texto); background: var(--blanco); }
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+#navbar {
+  background-color: var(--negro);
+  border-bottom: 3px solid var(--naranja);
+  padding: 14px 0;
+}
+.navbar-brand {
+  font-family: var(--fuente-disp);
+  font-size: 1.5rem;
+  color: var(--blanco) !important;
+  letter-spacing: 1px;
+}
+.navbar-brand span { color: var(--naranja); }
+.nav-link {
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ccc !important;
+  margin-left: 18px;
+  transition: color 0.2s;
+}
+.nav-link:hover { color: var(--naranja) !important; }
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1546519638-68e109498ffc?w=1600&q=80')
+    center/cover no-repeat;
+}
+.hero-subtitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--naranja);
+  margin-bottom: 12px;
+}
+.hero-title {
+  font-family: var(--fuente-disp);
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  line-height: 0.92;
+  color: var(--blanco);
+  letter-spacing: 2px;
+}
+.hero-desc {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-top: 20px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-hero {
+  background-color: var(--naranja);
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 40px;
+  border-radius: 4px;
+  border: none;
+  transition: background 0.25s, transform 0.2s;
+}
+.btn-hero:hover {
+  background-color: var(--naranja-d);
+  color: var(--blanco);
+  transform: translateY(-2px);
+}
+
+/* =============================================
+   STATS BAR
+   ============================================= */
+.stats-bar { background-color: var(--naranja); padding: 36px 0; }
+.stat-item { display: flex; flex-direction: column; align-items: center; padding: 10px; }
+.stat-num { font-family: var(--fuente-disp); font-size: 3.2rem; color: var(--blanco); line-height: 1; }
+.stat-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.82); margin-top: 4px; }
+
+/* =============================================
+   SECCIONES GENERALES
+   ============================================= */
+.section-light { background-color: var(--gris-cla); padding: 90px 0; }
+.section-dark  { background-color: var(--gris-osc); padding: 90px 0; }
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--naranja);
+  margin-bottom: 12px;
+}
+.section-title { font-family: var(--fuente-disp); font-size: clamp(2rem, 5vw, 3.2rem); color: var(--negro); margin-bottom: 20px; }
+.section-title.light { color: var(--blanco); }
+.section-text { font-size: 1rem; line-height: 1.8; color: #555; margin-bottom: 14px; }
+.section-text.light-text { color: #aaa; }
+
+.btn-primary-custom {
+  background-color: var(--naranja);
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  border-radius: 4px;
+  border: none;
+  transition: background 0.25s;
+}
+.btn-primary-custom:hover { background-color: var(--naranja-d); color: var(--blanco); }
+
+/* =============================================
+   COURT CARD (Nosotros)
+   ============================================= */
+.court-card {
+  background-color: var(--negro);
+  color: var(--blanco);
+  border-left: 5px solid var(--naranja);
+  padding: 38px 34px;
+  border-radius: 8px;
+}
+.court-icon { font-size: 2.8rem; margin-bottom: 14px; }
+.court-card h4 { font-family: var(--fuente-disp); font-size: 1.7rem; color: var(--naranja); margin-bottom: 8px; }
+.court-card p { color: #ccc; font-size: 0.93rem; line-height: 1.7; }
+.court-card hr { border-color: #333; margin: 16px 0; }
+
+/* =============================================
+   CATEGORÍAS
+   ============================================= */
+.categoria-block { padding: 40px 0; }
+
+.cat-header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.cat-emoji { font-size: 2.8rem; line-height: 1; flex-shrink: 0; }
+
+.cat-tag-badge {
+  display: inline-block;
+  background-color: var(--naranja);
+  color: var(--blanco);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+}
+.cat-title {
+  font-family: var(--fuente-disp);
+  font-size: 2rem;
+  color: var(--blanco);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  line-height: 1.1;
+}
+.cat-desc { font-size: 0.9rem; color: #999; line-height: 1.6; }
+
+/* Contacto de categoría */
+.cat-contact {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+.cat-contact p { color: #ccc; font-size: 0.88rem; margin-bottom: 6px; }
+.cat-contact p:last-child { margin-bottom: 0; }
+.cat-contact strong { color: var(--blanco); }
+
+/* Horarios */
+.schedule-box {
+  background-color: #1e1e1e;
+  border-left: 4px solid var(--naranja);
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+.schedule-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--naranja);
+  margin-bottom: 12px;
+}
+.schedule-table { width: 100%; border-collapse: collapse; }
+.schedule-table tr td {
+  font-size: 0.88rem;
+  color: #ccc;
+  padding: 5px 0;
+}
+.schedule-table tr td:first-child { font-weight: 700; color: var(--blanco); width: 45%; }
+.schedule-table tr:not(:last-child) td { border-bottom: 1px solid #2a2a2a; }
+
+/* Divisor entre categorías */
+.cat-divider {
+  border: none;
+  border-top: 1px solid #2d2d2d;
+  margin: 0 0 10px 0;
+}
+
+/* Etiqueta de resultados */
+.results-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--naranja);
+  margin-bottom: 14px;
+}
+
+/* =============================================
+   TARJETAS DE RESULTADOS
+   ============================================= */
+.result-card {
+  border-radius: 8px;
+  padding: 20px 18px;
+  background-color: #222;
+  border-top: 4px solid #444;
+  transition: transform 0.2s;
+}
+.result-card:hover { transform: translateY(-4px); }
+.result-card.win  { border-top-color: var(--verde); }
+.result-card.loss { border-top-color: var(--rojo); }
+.result-card.draw { border-top-color: var(--amarillo); }
+
+.result-date {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.result-teams {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.result-teams span {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--naranja);
+  text-transform: uppercase;
+  margin: 0 2px;
+}
+.result-score {
+  font-family: var(--fuente-disp);
+  font-size: 2rem;
+  color: var(--blanco);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.result-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+.result-badge.victoria { background-color: rgba(34,197,94,0.15); color: var(--verde); }
+.result-badge.derrota  { background-color: rgba(239,68,68,0.15);  color: var(--rojo); }
+.result-badge.empate   { background-color: rgba(234,179,8,0.15);  color: var(--amarillo); }
+
+/* =============================================
+   CONTACTO (sección light)
+   ============================================= */
+.custom-input-light {
+  background-color: var(--blanco);
+  border: 2px solid #ddd;
+  color: var(--negro);
+  border-radius: 6px;
+  padding: 13px 16px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+.custom-input-light:focus {
+  border-color: var(--naranja);
+  box-shadow: 0 0 0 3px rgba(249,115,22,0.15);
+  outline: none;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer {
+  background-color: var(--negro);
+  border-top: 3px solid var(--naranja);
+  padding: 40px 0 28px;
+}
+.footer-brand { font-family: var(--fuente-disp); font-size: 1.7rem; color: var(--blanco); letter-spacing: 2px; margin-bottom: 12px; }
+.footer-links { margin-bottom: 10px; }
+.footer-links a { color: #777; text-decoration: none; font-size: 0.83rem; margin: 0 4px; transition: color 0.2s; }
+.footer-links a:hover { color: var(--naranja); }
+.footer-copy { font-size: 0.76rem; color: #444; margin-bottom: 0; }
+
+/* =============================================
+   RESPONSIVIDAD
+   ============================================= */
+@media (max-width: 768px) {
+  .hero-title { font-size: 4.5rem; }
+  .stat-num { font-size: 2.4rem; }
+  .section-light, .section-dark { padding: 60px 0; }
+  .cat-title { font-size: 1.6rem; }
+}
+
+/* =============================================
+   MAPA
+   ============================================= */
+.mapa-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  border: 3px solid var(--naranja);
+}
+
+/* =============================================
+   BOTÓN FLOTANTE WHATSAPP
+   ============================================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+  background-color: #25D366;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px 14px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: var(--fuente-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+  transition: transform 0.25s, box-shadow 0.25s, background-color 0.2s;
+  animation: wpp-pulse 2.5s infinite;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+  color: white;
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(37,211,102,0.55);
+  animation: none;
+}
+
+.whatsapp-float span {
+  white-space: nowrap;
+}
+
+@keyframes wpp-pulse {
+  0%   { box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+  50%  { box-shadow: 0 6px 36px rgba(37,211,102,0.75); }
+  100% { box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+}
+
+@media (max-width: 576px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 16px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+/* =============================================
+   FORMULARIO CONTACTO (sección dark)
+   ============================================= */
+.custom-input {
+  background-color: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  color: var(--blanco);
+  border-radius: 6px;
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.custom-input:focus {
+  background-color: #2a2a2a;
+  border-color: var(--naranja);
+  color: var(--blanco);
+  box-shadow: 0 0 0 3px rgba(249,115,22,0.2);
+  outline: none;
+}
+.custom-input::placeholder { color: #666; }
+.custom-input option { background-color: #2a2a2a; color: var(--blanco); }
+
+/* Alertas del formulario */
+.alerta-form {
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  animation: fadeIn 0.3s ease;
+}
+.alerta-ok    { background-color: rgba(34,197,94,0.15);  color: #22c55e; border: 1px solid rgba(34,197,94,0.3); }
+.alerta-error { background-color: rgba(239,68,68,0.15);  color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
