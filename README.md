@@ -13,4 +13,5 @@ Landing page de contacto del Club Deportivo Jaguar.
 https://richardmachuca-dev.github.io/landing-page-html-css-jaguar/
 
 ## Autor
-Richard Machuca
+Richard Machuca A.
+Mi segunda contribución

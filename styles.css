@@ -158,7 +158,7 @@ body { font-family: var(--fuente-body); color: var(--texto); background: var(--b
 .court-card hr { border-color: #333; margin: 16px 0; }
 
 /* =============================================
-   CATEGORÍAS
+   CATEGORIAS
    ============================================= */
 .categoria-block { padding: 40px 0; }
 
@@ -192,7 +192,6 @@ body { font-family: var(--fuente-body); color: var(--texto); background: var(--b
 }
 .cat-desc { font-size: 0.9rem; color: #999; line-height: 1.6; }
 
-/* Contacto de categoría */
 .cat-contact {
   background-color: #222;
   border-radius: 8px;
@@ -203,12 +202,12 @@ body { font-family: var(--fuente-body); color: var(--texto); background: var(--b
 .cat-contact p:last-child { margin-bottom: 0; }
 .cat-contact strong { color: var(--blanco); }
 
-/* Horarios */
 .schedule-box {
   background-color: #1e1e1e;
   border-left: 4px solid var(--naranja);
   border-radius: 6px;
   padding: 16px 20px;
+  margin-bottom: 12px;
 }
 .schedule-title {
   font-size: 0.8rem;
@@ -227,122 +226,58 @@ body { font-family: var(--fuente-body); color: var(--texto); background: var(--b
 .schedule-table tr td:first-child { font-weight: 700; color: var(--blanco); width: 45%; }
 .schedule-table tr:not(:last-child) td { border-bottom: 1px solid #2a2a2a; }
 
-/* Divisor entre categorías */
+.schedule-note {
+  font-size: 0.75rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.torneos-box {
+  background-color: #1e1e1e;
+  border-left: 4px solid var(--amarillo);
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+.torneo-item {
+  font-size: 0.88rem;
+  color: #ccc;
+  margin-bottom: 4px;
+  padding-left: 4px;
+}
+.torneo-item:last-child { margin-bottom: 0; }
+.torneo-item::before {
+  content: "▸ ";
+  color: var(--amarillo);
+  font-weight: 700;
+}
+
 .cat-divider {
   border: none;
   border-top: 1px solid #2d2d2d;
   margin: 0 0 10px 0;
 }
 
-/* Etiqueta de resultados */
-.results-label {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--naranja);
-  margin-bottom: 14px;
-}
-
 /* =============================================
-   TARJETAS DE RESULTADOS
+   IMAGENES DE CATEGORIAS
    ============================================= */
-.result-card {
-  border-radius: 8px;
-  padding: 20px 18px;
-  background-color: #222;
-  border-top: 4px solid #444;
-  transition: transform 0.2s;
+.cat-img-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid #2a2a2a;
+  transition: border-color 0.25s, transform 0.25s;
+  aspect-ratio: 1/1;
 }
-.result-card:hover { transform: translateY(-4px); }
-.result-card.win  { border-top-color: var(--verde); }
-.result-card.loss { border-top-color: var(--rojo); }
-.result-card.draw { border-top-color: var(--amarillo); }
-
-.result-date {
-  display: block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #777;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-.result-teams {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #ccc;
-  margin-bottom: 8px;
-  line-height: 1.4;
-}
-.result-teams span {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: var(--naranja);
-  text-transform: uppercase;
-  margin: 0 2px;
-}
-.result-score {
-  font-family: var(--fuente-disp);
-  font-size: 2rem;
-  color: var(--blanco);
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-.result-badge {
-  display: inline-block;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 4px 12px;
-  border-radius: 20px;
-}
-.result-badge.victoria { background-color: rgba(34,197,94,0.15); color: var(--verde); }
-.result-badge.derrota  { background-color: rgba(239,68,68,0.15);  color: var(--rojo); }
-.result-badge.empate   { background-color: rgba(234,179,8,0.15);  color: var(--amarillo); }
-
-/* =============================================
-   CONTACTO (sección light)
-   ============================================= */
-.custom-input-light {
-  background-color: var(--blanco);
-  border: 2px solid #ddd;
-  color: var(--negro);
-  border-radius: 6px;
-  padding: 13px 16px;
-  font-size: 0.95rem;
-  transition: border-color 0.2s;
-}
-.custom-input-light:focus {
+.cat-img-wrapper:hover {
   border-color: var(--naranja);
-  box-shadow: 0 0 0 3px rgba(249,115,22,0.15);
-  outline: none;
+  transform: translateY(-4px);
 }
-
-/* =============================================
-   FOOTER
-   ============================================= */
-.footer {
-  background-color: var(--negro);
-  border-top: 3px solid var(--naranja);
-  padding: 40px 0 28px;
-}
-.footer-brand { font-family: var(--fuente-disp); font-size: 1.7rem; color: var(--blanco); letter-spacing: 2px; margin-bottom: 12px; }
-.footer-links { margin-bottom: 10px; }
-.footer-links a { color: #777; text-decoration: none; font-size: 0.83rem; margin: 0 4px; transition: color 0.2s; }
-.footer-links a:hover { color: var(--naranja); }
-.footer-copy { font-size: 0.76rem; color: #444; margin-bottom: 0; }
-
-/* =============================================
-   RESPONSIVIDAD
-   ============================================= */
-@media (max-width: 768px) {
-  .hero-title { font-size: 4.5rem; }
-  .stat-num { font-size: 2.4rem; }
-  .section-light, .section-dark { padding: 60px 0; }
-  .cat-title { font-size: 1.6rem; }
+.cat-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* =============================================
@@ -356,58 +291,7 @@ body { font-family: var(--fuente-body); color: var(--texto); background: var(--b
 }
 
 /* =============================================
-   BOTÓN FLOTANTE WHATSAPP
-   ============================================= */
-.whatsapp-float {
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  z-index: 9999;
-  background-color: #25D366;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 22px 14px 18px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-family: var(--fuente-body);
-  font-weight: 700;
-  font-size: 0.95rem;
-  box-shadow: 0 6px 24px rgba(37,211,102,0.45);
-  transition: transform 0.25s, box-shadow 0.25s, background-color 0.2s;
-  animation: wpp-pulse 2.5s infinite;
-}
-
-.whatsapp-float:hover {
-  background-color: #1ebe5d;
-  color: white;
-  transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 12px 32px rgba(37,211,102,0.55);
-  animation: none;
-}
-
-.whatsapp-float span {
-  white-space: nowrap;
-}
-
-@keyframes wpp-pulse {
-  0%   { box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
-  50%  { box-shadow: 0 6px 36px rgba(37,211,102,0.75); }
-  100% { box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
-}
-
-@media (max-width: 576px) {
-  .whatsapp-float {
-    bottom: 20px;
-    right: 16px;
-    padding: 12px 16px;
-    font-size: 0.85rem;
-  }
-}
-
-/* =============================================
-   FORMULARIO CONTACTO (sección dark)
+   FORMULARIO CONTACTO
    ============================================= */
 .custom-input {
   background-color: #2a2a2a;
@@ -429,7 +313,6 @@ body { font-family: var(--fuente-body); color: var(--texto); background: var(--b
 .custom-input::placeholder { color: #666; }
 .custom-input option { background-color: #2a2a2a; color: var(--blanco); }
 
-/* Alertas del formulario */
 .alerta-form {
   border-radius: 8px;
   padding: 14px 20px;
@@ -441,7 +324,123 @@ body { font-family: var(--fuente-body); color: var(--texto); background: var(--b
 .alerta-ok    { background-color: rgba(34,197,94,0.15);  color: #22c55e; border: 1px solid rgba(34,197,94,0.3); }
 .alerta-error { background-color: rgba(239,68,68,0.15);  color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
 
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer {
+  background-color: var(--negro);
+  border-top: 3px solid var(--naranja);
+  padding: 40px 0 28px;
+}
+.footer-brand { font-family: var(--fuente-disp); font-size: 1.7rem; color: var(--blanco); letter-spacing: 2px; margin-bottom: 12px; }
+.footer-links { margin-bottom: 10px; }
+.footer-links a { color: #777; text-decoration: none; font-size: 0.83rem; margin: 0 4px; transition: color 0.2s; }
+.footer-links a:hover { color: var(--naranja); }
+.footer-copy { font-size: 0.76rem; color: #444; margin-bottom: 0; }
+
+/* =============================================
+   BOTON FLOTANTE WHATSAPP
+   ============================================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+  background-color: #25D366;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 28px 18px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: var(--fuente-body);
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+  transition: transform 0.25s, box-shadow 0.25s, background-color 0.2s;
+  animation: wpp-pulse 2.5s infinite;
+}
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+  color: white;
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(37,211,102,0.55);
+  animation: none;
+}
+.whatsapp-float span { white-space: nowrap; }
+
+@keyframes wpp-pulse {
+  0%   { box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+  50%  { box-shadow: 0 6px 36px rgba(37,211,102,0.75); }
+  100% { box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+}
+
+/* =============================================
+   RESPONSIVIDAD
+   ============================================= */
+@media (max-width: 768px) {
+  .hero-title { font-size: 4.5rem; }
+  .stat-num { font-size: 2.4rem; }
+  .section-light, .section-dark { padding: 60px 0; }
+  .cat-title { font-size: 1.6rem; }
+}
+
+@media (max-width: 576px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 16px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+/* =============================================
+   ANIMACIONES
+   ============================================= */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-8px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================================
+   INSTAGRAM LINKS
+   ============================================= */
+.ig-link {
+  color: var(--naranja);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.93rem;
+  transition: color 0.2s;
+}
+.ig-link:hover {
+  color: var(--naranja-d);
+  text-decoration: underline;
+}
+
+/* =============================================
+   LOGO NAVBAR
+   ============================================= */
+.navbar-logo {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid var(--naranja);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-logo:hover {
+  transform: scale(1.4);
+  box-shadow: 0 0 16px rgba(249,115,22,0.6);
+}
+
+/* =============================================
+   IMAGEN CONTACTO
+   ============================================= */
+.contacto-img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  object-fit: contain;
 }
