@@ -1,6 +1,6 @@
 # Landing Page Club Deportivo Jaguar
 
-Uso de IA en el desarrollo de la page
+Uso de IA en el desarrollo
 Este proyecto fue desarrollado con asistencia de Claude (Anthropic) como herramienta de IA para:
 
 Generación y revisión de código HTML y CSS
@@ -33,3 +33,4 @@ Mi segunda contribuciónMi tercera contribución
 Mi tercera contribución
 Mi cuarta contribución
 Mi quinta contribución
+Mi sexta contribución
